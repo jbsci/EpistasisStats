@@ -1,0 +1,65 @@
+[1] \newentry
+[1] 11
+[1] removed complexes: 
+[1] 451c 1vqb 3hhr
+[1] Length of new dataset: 
+[1] 165
+[1] R_sq ranking: 
+[[1]]
+[1] Full model:  0.354772411050136
+
+[[2]]
+[1] size_net: 0.0232726740724684
+
+[[3]]
+[1] charge_ab2: 0.116798390734943
+
+[[4]]
+[1] abs_sasa_net: 0.0377246345492184
+
+[[5]]
+[1] hp_ab3: 0.120281918152646
+
+[[6]]
+[1] num_res: 0.025216121881141
+
+[[7]]
+[1] ss_ab2: 0.0911088506257206
+
+[[8]]
+[1] separation: 0.0135510271927455
+
+
+Call:
+lm(formula = bestmodel1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.6160 -0.4726 -0.2119  0.3617  3.0935 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            1.017e+00  2.758e-01   3.687 0.000318 ***
+size_net               5.889e-03  2.828e-03   2.082 0.039032 *  
+charge_ab20A           2.554e+00  5.921e-01   4.314 2.92e-05 ***
+charge_ab20R          -7.674e-01  3.114e-01  -2.464 0.014887 *  
+abs_sasa_net           5.051e-03  5.083e-03   0.994 0.321969    
+hp_ab3                -4.542e-01  2.062e-01  -2.203 0.029121 *  
+num_res               -1.336e-03  5.984e-04  -2.233 0.027068 *  
+ss_ab2HL              -2.193e-01  2.021e-01  -1.085 0.279556    
+ss_ab2HS              -4.923e-01  3.551e-01  -1.386 0.167689    
+ss_ab2LL              -2.019e-01  2.083e-01  -0.969 0.334028    
+ss_ab2LS              -6.606e-03  1.674e-01  -0.039 0.968569    
+ss_ab2SS               7.377e-01  2.060e-01   3.582 0.000463 ***
+separation            -1.412e-02  8.011e-03  -1.763 0.079959 .  
+size_net:abs_sasa_net -1.035e-04  4.913e-05  -2.107 0.036840 *  
+charge_ab20A:hp_ab3   -2.740e+00  6.383e-01  -4.292 3.18e-05 ***
+charge_ab20R:hp_ab3    9.300e-01  4.107e-01   2.264 0.025009 *  
+hp_ab3:num_res         1.112e-03  6.480e-04   1.716 0.088315 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.752 on 148 degrees of freedom
+Multiple R-squared:  0.3548,	Adjusted R-squared:  0.285 
+F-statistic: 5.086 on 16 and 148 DF,  p-value: 2.443e-08
+

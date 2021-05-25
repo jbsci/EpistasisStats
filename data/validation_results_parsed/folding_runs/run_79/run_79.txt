@@ -1,0 +1,52 @@
+[1] \newentry
+[1] 79
+[1] removed complexes: 
+[1] 4lyz 1bni 2wsy
+[1] Length of new dataset: 
+[1] 176
+[1] R_sq ranking: 
+[[1]]
+[1] Full model:  0.214967074118337
+
+[[2]]
+[1] charge_ab3: 0.0236368941060254
+
+[[3]]
+[1] separation: 0.0482145875097745
+
+[[4]]
+[1] ss_ab3: 0.0409858853441922
+
+[[5]]
+[1] hp_ab3: 0.134661043755231
+
+[[6]]
+[1] size_net: 0.0813446318621042
+
+
+Call:
+lm(formula = bestmodel1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.2393 -0.4731 -0.1399  0.2564  2.5952 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        0.652397   0.192356   3.392 0.000869 ***
+charge_ab3        -0.657189   0.295788  -2.222 0.027647 *  
+separation        -0.023317   0.007302  -3.193 0.001685 ** 
+ss_ab3             0.359313   0.270962   1.326 0.186639    
+hp_ab3             0.017182   0.316026   0.054 0.956706    
+size_net           0.009968   0.002547   3.913 0.000133 ***
+charge_ab3:hp_ab3  0.712219   0.368571   1.932 0.055015 .  
+ss_ab3:hp_ab3      0.611273   0.267564   2.285 0.023603 *  
+ss_ab3:size_net   -0.010045   0.004198  -2.393 0.017840 *  
+hp_ab3:size_net   -0.010758   0.003834  -2.806 0.005617 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7265 on 166 degrees of freedom
+Multiple R-squared:  0.215,	Adjusted R-squared:  0.1724 
+F-statistic: 5.051 on 9 and 166 DF,  p-value: 4.997e-06
+

@@ -1,0 +1,29 @@
+Average Rank
+Full model	nan
+separation	3.980
+hp	1.212
+num_res	5.269
+size_net	3.220
+charge	3.083
+sasa	4.897
+ss	3.213
+
+Average delta Rsq
+Full model	0.300
+separation	0.058
+hp	0.150
+num_res	0.038
+size_net	0.074
+charge	0.082
+sasa	0.041
+ss	0.085
+
+Number of models:
+Full model	100.000
+separation	100.000
+hp	99.000
+num_res	26.000
+size_net	100.000
+charge	96.000
+sasa	97.000
+ss	47.000

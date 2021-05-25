@@ -1,0 +1,67 @@
+[1] \newentry
+[1] 56
+[1] removed complexes: 
+[1] 1lz1 1bvc 1stn
+[1] Length of new dataset: 
+[1] 194
+[1] R_sq ranking: 
+[[1]]
+[1] Full model:  0.368280986972
+
+[[2]]
+[1] ss_ab2: 0.0897336585991727
+
+[[3]]
+[1] charge_ab2: 0.0665247429439502
+
+[[4]]
+[1] hp_ab3: 0.156442856014851
+
+[[5]]
+[1] size_net: 0.0873522791236179
+
+[[6]]
+[1] rel_sasa_net: 0.0449476516484269
+
+[[7]]
+[1] separation: 0.104474549262962
+
+
+Call:
+lm(formula = bestmodel1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.3810 -0.4646 -0.1059  0.2528  3.0482 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            0.360856   0.255717   1.411 0.160006    
+ss_ab2HL               0.185423   0.297286   0.624 0.533639    
+ss_ab2HS               0.502353   1.033934   0.486 0.627681    
+ss_ab2LL              -0.472623   0.297315  -1.590 0.113753    
+ss_ab2LS              -0.122435   0.280233  -0.437 0.662729    
+ss_ab2SS               1.104438   0.320442   3.447 0.000714 ***
+charge_ab20A           2.016498   0.562879   3.582 0.000443 ***
+charge_ab20R          -0.548496   0.293198  -1.871 0.063081 .  
+hp_ab3                 0.179028   0.277729   0.645 0.520037    
+size_net               0.013660   0.003022   4.520 1.15e-05 ***
+rel_sasa_net           1.883444   1.536260   1.226 0.221877    
+separation            -0.028502   0.012861  -2.216 0.027994 *  
+ss_ab2HL:separation   -0.008447   0.020794  -0.406 0.685077    
+ss_ab2HS:separation   -0.054129   0.095179  -0.569 0.570302    
+ss_ab2LL:separation    0.044278   0.020413   2.169 0.031447 *  
+ss_ab2LS:separation    0.017222   0.020145   0.855 0.393796    
+ss_ab2SS:separation   -0.074680   0.029283  -2.550 0.011635 *  
+charge_ab20A:hp_ab3   -2.204702   0.617190  -3.572 0.000459 ***
+charge_ab20R:hp_ab3    0.656591   0.389236   1.687 0.093441 .  
+hp_ab3:size_net       -0.011238   0.003753  -2.994 0.003158 ** 
+hp_ab3:rel_sasa_net    3.204274   1.316431   2.434 0.015953 *  
+size_net:rel_sasa_net -0.051427   0.017969  -2.862 0.004732 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7106 on 172 degrees of freedom
+Multiple R-squared:  0.3683,	Adjusted R-squared:  0.2912 
+F-statistic: 4.775 on 21 and 172 DF,  p-value: 2.384e-09
+

@@ -1,0 +1,77 @@
+[1] "\newentry"
+[1] 71
+[1] "removed complexes: "
+[1] "3d3v" "1fss" "3hfm" "4k71" "1mhp" "1bd2"
+[1] "R_sq ranking: "
+[[1]]
+[1] "Full model:  0.299312020282742"
+
+[[2]]
+[1] "size_net: 0.0430729111783967"
+
+[[3]]
+[1] "intside_int: 0.059877643079591"
+
+[[4]]
+[1] "abs_sasa_net: 0.0409959682094651"
+
+[[5]]
+[1] "charge_ab2: 0.104016967885931"
+
+[[6]]
+[1] "ss_ab3: 0.0178270615223636"
+
+[[7]]
+[1] "cplx_type: 0.110388572076749"
+
+[[8]]
+[1] "separation: 0.0645865796190833"
+
+
+Call:
+lm(formula = bestmodel1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.8837 -0.4423 -0.1072  0.2798  3.9939 
+
+Coefficients:
+                                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                         0.6040660  0.1699339   3.555 0.000414 ***
+size_net                            0.0037987  0.0016059   2.365 0.018381 *  
+intside_int                         0.5468499  0.2059713   2.655 0.008181 ** 
+abs_sasa_net                       -0.0062926  0.0015296  -4.114 4.54e-05 ***
+charge_ab20A                        1.1226237  0.3386090   3.315 0.000981 ***
+charge_ab20R                       -0.7844120  0.2903142  -2.702 0.007125 ** 
+ss_ab3                              0.7570286  0.2228712   3.397 0.000736 ***
+cplx_typeAB/AG                     -1.2647062  0.4545183  -2.783 0.005595 ** 
+cplx_typeCyto/Cyto                  0.4910728  0.4988604   0.984 0.325394    
+cplx_typeGTPase/Other              -0.3042687  0.3949982  -0.770 0.441478    
+cplx_typeTCR/pMHC                  -0.9099092  0.3640892  -2.499 0.012765 *  
+separation                         -0.0051438  0.0103389  -0.498 0.619037    
+size_net:intside_int               -0.0047997  0.0019242  -2.494 0.012935 *  
+size_net:ss_ab3                    -0.0028759  0.0016573  -1.735 0.083306 .  
+size_net:cplx_typeAB/AG             0.0127245  0.0029369   4.333 1.78e-05 ***
+size_net:cplx_typeCyto/Cyto         0.0023195  0.0029519   0.786 0.432382    
+size_net:cplx_typeGTPase/Other      0.0004401  0.0028920   0.152 0.879099    
+size_net:cplx_typeTCR/pMHC          0.0038234  0.0034019   1.124 0.261586    
+intside_int:charge_ab20A            0.7986789  0.2672164   2.989 0.002936 ** 
+intside_int:charge_ab20R            0.1786817  0.2412599   0.741 0.459267    
+intside_int:cplx_typeAB/AG          0.5905301  0.4248998   1.390 0.165196    
+intside_int:cplx_typeCyto/Cyto     -1.4642451  0.3808227  -3.845 0.000136 ***
+intside_int:cplx_typeGTPase/Other  -0.3780369  0.3132033  -1.207 0.227994    
+intside_int:cplx_typeTCR/pMHC      -0.0592043  0.2724692  -0.217 0.828071    
+abs_sasa_net:cplx_typeAB/AG        -0.0206737  0.0076925  -2.688 0.007435 ** 
+abs_sasa_net:cplx_typeCyto/Cyto     0.0082451  0.0057615   1.431 0.153028    
+abs_sasa_net:cplx_typeGTPase/Other  0.0071707  0.0038930   1.842 0.066065 .  
+abs_sasa_net:cplx_typeTCR/pMHC      0.0089068  0.0043620   2.042 0.041677 *  
+charge_ab20A:separation            -0.0949755  0.0214653  -4.425 1.18e-05 ***
+charge_ab20R:separation             0.0475377  0.0211139   2.251 0.024782 *  
+ss_ab3:separation                  -0.0284003  0.0144207  -1.969 0.049450 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7686 on 507 degrees of freedom
+Multiple R-squared:  0.2993,	Adjusted R-squared:  0.2579 
+F-statistic: 7.219 on 30 and 507 DF,  p-value: < 2.2e-16
+

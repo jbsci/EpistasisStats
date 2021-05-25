@@ -1,0 +1,67 @@
+[1] \newentry
+[1] 25
+[1] removed complexes: 
+[1] 2rn2 1k9q 1shg
+[1] Length of new dataset: 
+[1] 187
+[1] R_sq ranking: 
+[[1]]
+[1] Full model:  0.32929545701737
+
+[[2]]
+[1] ss_ab2: 0.0927127490003412
+
+[[3]]
+[1] size_net: 0.0620626706691911
+
+[[4]]
+[1] separation: 0.104212492828059
+
+[[5]]
+[1] hp_ab3: 0.131274377438773
+
+[[6]]
+[1] abs_sasa_net: 0.0258971201505712
+
+[[7]]
+[1] charge_ab2: 0.0729257513501043
+
+
+Call:
+lm(formula = bestmodel1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.2821 -0.4743 -0.1585  0.2572  2.8374 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            2.742e-01  2.698e-01   1.016 0.311097    
+ss_ab2HL               2.748e-01  3.131e-01   0.878 0.381338    
+ss_ab2HS               1.029e+00  1.047e+00   0.983 0.327277    
+ss_ab2LL              -4.860e-01  3.398e-01  -1.430 0.154535    
+ss_ab2LS              -1.283e-01  3.121e-01  -0.411 0.681695    
+ss_ab2SS               1.219e+00  3.476e-01   3.508 0.000581 ***
+size_net               1.070e-02  2.925e-03   3.656 0.000344 ***
+separation            -7.664e-03  1.321e-02  -0.580 0.562546    
+hp_ab3                 8.343e-01  4.272e-01   1.953 0.052537 .  
+abs_sasa_net           4.909e-03  5.252e-03   0.935 0.351278    
+charge_ab20A           2.196e+00  5.999e-01   3.661 0.000338 ***
+charge_ab20R          -4.467e-01  3.129e-01  -1.428 0.155270    
+ss_ab2HL:separation   -2.632e-02  2.139e-02  -1.231 0.220158    
+ss_ab2HS:separation   -1.191e-01  9.394e-02  -1.268 0.206696    
+ss_ab2LL:separation    2.416e-02  2.076e-02   1.163 0.246374    
+ss_ab2LS:separation    1.131e-02  2.239e-02   0.505 0.614160    
+ss_ab2SS:separation   -9.103e-02  3.100e-02  -2.937 0.003789 ** 
+size_net:hp_ab3       -7.838e-03  4.263e-03  -1.839 0.067768 .  
+size_net:abs_sasa_net -1.039e-04  5.554e-05  -1.870 0.063247 .  
+separation:hp_ab3     -4.966e-02  2.606e-02  -1.905 0.058469 .  
+hp_ab3:charge_ab20A   -2.412e+00  6.654e-01  -3.624 0.000385 ***
+hp_ab3:charge_ab20R    6.978e-01  4.236e-01   1.648 0.101340    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7535 on 165 degrees of freedom
+Multiple R-squared:  0.3293,	Adjusted R-squared:  0.2439 
+F-statistic: 3.858 on 21 and 165 DF,  p-value: 4.176e-07
+

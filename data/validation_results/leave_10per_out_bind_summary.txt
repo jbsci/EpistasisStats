@@ -1,0 +1,32 @@
+Average Rank
+Full model	nan
+separation	3.660
+ss	6.680
+cplx_type	1.040
+hp	7.469
+intside_int	4.660
+charge	2.010
+sasa	5.640
+size_net	4.450
+
+Average delta Rsq
+Full model	0.315
+separation	0.056
+ss	0.022
+cplx_type	0.134
+hp	0.018
+intside_int	0.046
+charge	0.082
+sasa	0.038
+size_net	0.047
+
+Number of models:
+Full model	100.000
+separation	100.000
+ss	97.000
+cplx_type	100.000
+hp	32.000
+intside_int	100.000
+charge	100.000
+sasa	100.000
+size_net	100.000

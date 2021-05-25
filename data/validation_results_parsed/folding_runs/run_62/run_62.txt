@@ -1,0 +1,58 @@
+[1] \newentry
+[1] 62
+[1] removed complexes: 
+[1] 3hhr 4lyz 2lzm
+[1] Length of new dataset: 
+[1] 155
+[1] R_sq ranking: 
+[[1]]
+[1] Full model:  0.280635666836913
+
+[[2]]
+[1] ss_ab3: 0.0294977545012093
+
+[[3]]
+[1] size_net: 0.0539961795146227
+
+[[4]]
+[1] rel_sasa_net: 0.0741133558002199
+
+[[5]]
+[1] charge_ab2: 0.11275652414247
+
+[[6]]
+[1] separation: 0.0570987082520159
+
+[[7]]
+[1] hp_ab3: 0.111326850011148
+
+
+Call:
+lm(formula = bestmodel1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0783 -0.5322 -0.1094  0.3056  2.8719 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              0.967920   0.277220   3.492 0.000640 ***
+ss_ab3                   0.143046   0.297818   0.480 0.631744    
+size_net                 0.010648   0.003352   3.177 0.001827 ** 
+rel_sasa_net            -0.912190   2.310648  -0.395 0.693600    
+charge_ab20A             2.153457   0.585369   3.679 0.000332 ***
+charge_ab20R            -0.768563   0.332939  -2.308 0.022420 *  
+separation              -0.058802   0.017543  -3.352 0.001029 ** 
+hp_ab3                  -0.109605   0.166436  -0.659 0.511257    
+ss_ab3:size_net         -0.006460   0.004211  -1.534 0.127223    
+size_net:rel_sasa_net   -0.042843   0.019026  -2.252 0.025868 *  
+rel_sasa_net:separation  0.386159   0.132643   2.911 0.004181 ** 
+charge_ab20A:hp_ab3     -2.499571   0.642491  -3.890 0.000153 ***
+charge_ab20R:hp_ab3      0.866215   0.443450   1.953 0.052744 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7638 on 142 degrees of freedom
+Multiple R-squared:  0.2806,	Adjusted R-squared:  0.2198 
+F-statistic: 4.616 on 12 and 142 DF,  p-value: 2.704e-06
+

@@ -1,0 +1,30 @@
+
+Call:
+lm(formula = bestmodel)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0249 -0.4853 -0.1741  0.3021  2.9832 
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              0.703164   0.222336   3.163  0.00182 ** 
+separation              -0.041601   0.014774  -2.816  0.00538 ** 
+charge_ab20A             1.863133   0.576964   3.229  0.00146 ** 
+charge_ab20R            -0.735587   0.294498  -2.498  0.01334 *  
+hp_ab3                   0.074571   0.286024   0.261  0.79459    
+size_net                 0.011972   0.002838   4.219 3.79e-05 ***
+rel_sasa_net             0.326863   1.781413   0.183  0.85461    
+charge_ab20A:hp_ab3     -2.046748   0.638688  -3.205  0.00159 ** 
+charge_ab20R:hp_ab3      0.837964   0.403395   2.077  0.03911 *  
+hp_ab3:size_net         -0.010288   0.003866  -2.661  0.00845 ** 
+hp_ab3:rel_sasa_net      2.702248   1.345050   2.009  0.04594 *  
+size_net:rel_sasa_net   -0.043650   0.018188  -2.400  0.01736 *  
+separation:rel_sasa_net  0.157725   0.104362   1.511  0.13236    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.756 on 191 degrees of freedom
+Multiple R-squared:  0.2578,	Adjusted R-squared:  0.2112 
+F-statistic: 5.529 on 12 and 191 DF,  p-value: 4.416e-08
+

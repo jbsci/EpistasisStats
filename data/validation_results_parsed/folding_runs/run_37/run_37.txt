@@ -1,0 +1,66 @@
+[1] \newentry
+[1] 37
+[1] removed complexes: 
+[1] 1vqb 1wq5 1chk
+[1] Length of new dataset: 
+[1] 169
+[1] R_sq ranking: 
+[[1]]
+[1] Full model:  0.343988878885792
+
+[[2]]
+[1] charge_ab2: 0.119767537079254
+
+[[3]]
+[1] num_res: 0.0319803863261174
+
+[[4]]
+[1] separation: 0.0261080272464885
+
+[[5]]
+[1] size_net: 0.0249956263653024
+
+[[6]]
+[1] hp_ab3: 0.119156044435826
+
+[[7]]
+[1] abs_sasa_net: 0.0375088522396819
+
+[[8]]
+[1] ss_ab2: 0.0939497628149258
+
+
+Call:
+lm(formula = bestmodel1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.6230 -0.4960 -0.1559  0.3732  2.9810 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            7.436e-01  2.951e-01   2.520 0.012777 *  
+charge_ab20A           2.564e+00  5.996e-01   4.275 3.37e-05 ***
+charge_ab20R          -7.898e-01  3.153e-01  -2.505 0.013293 *  
+num_res               -2.235e-04  9.226e-04  -0.242 0.808886    
+separation             6.873e-03  1.661e-02   0.414 0.679643    
+size_net               5.655e-03  2.861e-03   1.976 0.049949 *  
+hp_ab3                -3.927e-01  2.088e-01  -1.880 0.061974 .  
+abs_sasa_net           6.131e-03  4.880e-03   1.256 0.210963    
+ss_ab2HL              -7.269e-02  1.873e-01  -0.388 0.698421    
+ss_ab2HS              -4.504e-01  3.604e-01  -1.250 0.213376    
+ss_ab2LL              -1.583e-01  2.112e-01  -0.750 0.454695    
+ss_ab2LS               8.931e-02  1.759e-01   0.508 0.612355    
+ss_ab2SS               8.526e-01  2.162e-01   3.944 0.000122 ***
+charge_ab20A:hp_ab3   -2.857e+00  6.455e-01  -4.425 1.83e-05 ***
+charge_ab20R:hp_ab3    9.474e-01  4.181e-01   2.266 0.024860 *  
+num_res:separation    -1.183e-04  7.629e-05  -1.551 0.123104    
+num_res:hp_ab3         1.215e-03  6.609e-04   1.839 0.067889 .  
+size_net:abs_sasa_net -1.118e-04  4.833e-05  -2.313 0.022049 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.763 on 151 degrees of freedom
+Multiple R-squared:  0.344,	Adjusted R-squared:  0.2701 
+F-statistic: 4.658 on 17 and 151 DF,  p-value: 7.986e-08
+
