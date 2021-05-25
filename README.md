@@ -1,5 +1,8 @@
 # EpistasisStats - Data and scripts for analyzing Epistasis
 
+### Clone of https://github.com/YtrebergPatelLab/EpistasisStats, I'm the original author. 
+
+
 ## General overview
 
 ### Analysis
